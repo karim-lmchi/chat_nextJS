@@ -1,0 +1,122 @@
+.container {
+  margin: 0 auto;
+  width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: lightgrey;
+  color: black;
+  width: 100%;
+  padding: 10px;
+
+}
+
+.titleNames {
+  margin: 0;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  background-color: lightgrey;
+  border: none;
+}
+
+.messagesContainer {
+  width: 100%;
+  height: calc(100% - 100px);
+  overflow-y: scroll;
+}
+
+.messagesUserConnected {
+  display: flex;
+  justify-content: end;
+  padding: 5px 10px;
+}
+
+.messagesOtherUser {
+  padding: 5px 10px;
+}
+
+.messageUser {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0;
+  background-color: skyblue;
+  width: fit-content;
+}
+
+.messageOther {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0;
+  background-color: lightgreen;
+  width: fit-content;
+}
+
+.timestampDisplay {
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.otherUserName {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.inputArea {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  padding: 0 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.messageButton {
+  background-color: green;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .messageUser,
+  .messageOther {
+    width: calc(100% - 35px);
+  }
+}

@@ -1,0 +1,62 @@
+.contentWrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.conversationsWrapper {
+  width: 100%;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px darkgray;
+}
+
+.cardContainer:hover {
+  background-color: rgb(245, 243, 243);
+}
+
+.picture {
+  margin: auto 50px auto 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.newMessageButton {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+  font-size: 28px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.newMessageButton:hover {
+  filter: brightness(150%);
+}
+
+@media screen and (max-width: 767px) {
+  .contentWrapper {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
